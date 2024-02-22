@@ -1,0 +1,20 @@
+.main-product-con{
+    /* border: 1px solid black; */
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.product-sub-con{
+    width: 15rem;
+    height: auto;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.2); 
+}
+.product-sub-con p{
+   font-size: 20px;
+   line-height: 30px;
+   margin-left: 0.5rem;
+}
