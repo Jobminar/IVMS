@@ -3,11 +3,12 @@
     flex-direction: column;
     margin: 1rem;
     gap: 1rem;
-    width: 40%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid black; */
 }
 .submit-button button{
     width: 10rem;
@@ -21,4 +22,47 @@ h1{
     font-family: Inter;
     font-size: 20px;
     line-height: 40px;
+}
+.member-mmain-img{
+    width: 95%;
+    height: 25rem;
+    filter: grayscale(0%);
+    margin: 1rem auto;
+}
+.member-text p{
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: justify;
+    margin:  auto 3rem;
+}
+.input-sub{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.personal-details{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin: 1rem;
+}
+.personal-details div{
+    display: grid;
+}
+.address-details{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    margin: 1rem;
+}
+.address-details div{
+    display: grid;
+    
 }

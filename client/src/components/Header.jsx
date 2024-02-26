@@ -75,7 +75,25 @@ const Header = () => {
         >
           About
         </li>
-{/* 
+
+        <li
+          onClick={() => {
+            handleNavigation("/becomeamember");
+            handleItemClick("/becomeamember");
+          }}
+          className={clickedItem === "/becomeamember" ? "clicked" : ""}
+        >
+        Become member
+        </li>
+        <li
+          onClick={() => {
+            handleNavigation("/donate");
+            handleItemClick("/donate");
+          }}
+          className={clickedItem === "/donate" ? "clicked" : ""}
+        >
+        Donate
+        </li>
         <li
           onClick={() => {
             handleNavigation("/products");
@@ -83,8 +101,8 @@ const Header = () => {
           }}
           className={clickedItem === "/products" ? "clicked" : ""}
         >
-          Products
-        </li> */}
+        Agenda
+        </li>
         <li
           onClick={() => {
             handleNavigation("/blogs");

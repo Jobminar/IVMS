@@ -3,6 +3,7 @@ import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import './contact.css';
 import { json } from 'react-router-dom';
+import { InputLabel, OutlinedInput, FormControl } from '@mui/material';
 
 const Contact = () => {
   // State variable for form inputs
@@ -56,34 +57,52 @@ const Contact = () => {
     <>
       <h1>Contact us Form</h1>
       <div className='contact-con'>
+      <div className='contact-details'>
+      <div className='input-sub'>
+        <InputLabel htmlFor="name">Name</InputLabel>
         <TextField
           id="outlined-basic"
-          label="Name"
+          // label="Name"
           variant="outlined"
           value={formData.name}
           onChange={(e) => handleInputChange('name', e.target.value)}
         />
+      </div>
+
+      <div className='input-sub'>
+        <InputLabel htmlFor="phone">Phone No</InputLabel>
         <TextField
           id="outlined-basic"
-          label="Phone No"
+          // label="Phone No"
           variant="outlined"
           value={formData.phone}
           onChange={(e) => handleInputChange('phone', e.target.value)}
         />
+      </div>
+
+      <div className='input-sub'>
+        <InputLabel htmlFor="email">Email</InputLabel>
         <TextField
           id="outlined-basic"
-          label="Email"
+          // label="Email"
           variant="outlined"
           value={formData.email}
           onChange={(e) => handleInputChange('email', e.target.value)}
         />
+      </div>
+
+      <div className='input-sub'>
+        <InputLabel htmlFor="message">Message</InputLabel>
         <TextField
           id="outlined-basic"
-          label="Message"
+          // label="Message"
           variant="outlined"
           value={formData.message}
           onChange={(e) => handleInputChange('message', e.target.value)}
         />
+      </div>
+      </div>
+
         <div className='submit-button'>
           <button onClick={handleSubmit}>Submit</button>
         </div>
